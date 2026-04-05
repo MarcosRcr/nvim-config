@@ -1,13 +1,13 @@
 return {
-  "ray-x/aurora",
-  init = function()
-    vim.g.aurora_italic = 1
-    vim.g.aurora_transparent = 1
-    vim.g.aurora_bold = 1
-  end,
+  "scottmckendry/cyberdream.nvim",
+  lazy = false,
+  priority = 1000,
   config = function()
-    vim.cmd.colorscheme("aurora")
-    -- override defaults
-    vim.api.nvim_set_hl(0, "@number", { fg = "#e933e3" })
+    require("cyberdream").setup({
+      transparent = true,
+      italic_comments = true,
+      bold_keywords = true,
+    })
+    vim.cmd.colorscheme("cyberdream")
   end,
 }

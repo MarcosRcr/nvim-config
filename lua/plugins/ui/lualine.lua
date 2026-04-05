@@ -10,13 +10,4 @@ return {
       })
     end,
   },
-  {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    opts = function()
-      return {
-        -- tu configuración personalizada
-      }
-    end,
-  },
 }
